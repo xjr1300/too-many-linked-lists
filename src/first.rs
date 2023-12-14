@@ -14,6 +14,7 @@ struct Node {
     next: Link,
 }
 
+#[allow(clippy::new_without_default)]
 impl List {
     pub fn new() -> Self {
         Self { head: Link::Empty }
